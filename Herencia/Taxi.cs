@@ -8,7 +8,7 @@ namespace Herencia
 {
     class Taxi: Vehiculo.Vehiculo
     {
-        public int numeroLicencia { get; set; }
+        public string numeroLicencia { get; set; }
 
         public string TaxisRegion()
         {
@@ -19,7 +19,9 @@ namespace Herencia
         {
             
             return "tiene licencia de taxista";
+
         }
+        
 
 
 

@@ -12,8 +12,8 @@ namespace Vehiculo
         
         public string vehiculoMatricula { get; set; }
         public string vehiculoModelo { get; set; }
-        public int vehiculoPotenciaCV { get; set; }
-        public Boolean vehiculoLicencia { get; set; }
+        public String vehiculoPotenciaCV { get; set; }
+        public String vehiculoLicencia { get; set; }
 
 
      
@@ -34,25 +34,17 @@ namespace Vehiculo
        
         public string getPotencia(string marca, int potencia)
         {
-            return "El vehiculo de marca" + marca +
-                " tiene" + potencia + "caballos";
+            return "El vehiculo de marca"+ " " + marca +
+                " tiene"+ " " + potencia +" " +"caballos";
         }
 
 
-  
-        public  string Licencia()
+
+        public string getLicencia(int matricula, string licencia)
         {
-            var licencia = "";
-            if (vehiculoLicencia == true)
-            {
-                licencia = "Tiene licencia";
-            }
-            else
-            {
-                licencia = "No tiene licencia";
-            }
-            return "El auto tiene matriculas" + vehiculoMatricula +
-                " y el conductor " + licencia;
+
+            return "El auto tiene matriculas"+" " + matricula +
+                " y el conductor "+" " + licencia;
 
         }
     }
